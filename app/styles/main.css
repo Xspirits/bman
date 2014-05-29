@@ -1,0 +1,177 @@
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.hero-unit {
+    margin: 0 auto;
+    max-width: 300px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: #eee;
+    border-radius: 6px;
+    padding: 60px; 
+}
+
+.hero-unit h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+/* START OCSS */
+
+.blacky {
+    background:#1A1A1A;
+}
+.blacky-color {
+    color:#1A1A1A;
+}
+.pink {
+    background: #C84069;
+}
+.pink-color  {
+    color: #C84069;
+}
+/* overwirte css of pure */
+.header .pure-menu {
+    padding: 0.1em .5em;
+}
+.pure-menu.pure-menu-horizontal>ul {
+    float: right;
+}
+.pure-menu.pure-menu-open, .pure-menu.pure-menu-horizontal li .pure-menu-children {
+    background:#1A1A1A;
+}
+/* top nav */
+img.img-logo {
+    width: 25px;
+    display: inline-block;
+    zoom: 1;
+    margin: 0 0 0 .5em;
+    vertical-align: middle;
+}
+.pure-menu .pure-menu-heading {
+    color: #FFFFFF;
+    text-transform: none; 
+    font-weight: bold;
+    font-size: 90%;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    height: 2.4em;
+    padding: .6em .5em .5em;
+}
+.pure-menu li a {
+    padding: .6em .5em;
+    font-weight: bolder;
+    font-size: 14px;
+    transition: color 100ms linear;
+}
+.pure-menu li a:hover,.pure-menu li a:focus,.pure-menu li a:active {
+    color: #C84069 !important;
+
+}
+.pure-menu a, .pure-menu .pure-menu-can-have-children>li:after {
+    color: #eee;
+}
+.pure-menu .pure-menu-selected a,.pure-menu .pure-menu-selected a:hover,.pure-menu li a:hover,.pure-menu li a:focus {
+    color: #FFF;
+}
+
+.pure-menu.pure-menu-open.pure-menu-fixed {
+    border: 0;
+    border-bottom: 1px solid #C84069;
+}
+
+/* splash */
+.splash-container {
+    background: #1A1A1A url('/images/bg_2.jpg') top right no-repeat;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+.splash {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+    color: #fff;
+}
+
+
+    .splash .splash-head {
+        position: relative;
+        font-size: 200%;
+    }
+    @media (min-width: 992px) {
+        .splash .splash-head {
+            position: relative;
+            font-size: 450%;
+        }
+
+    }
+    .splash .splash-head:before {
+        content: '';
+        background-image: url('/images/logo2.png');
+        width: 260px;
+        height: 260px;
+        position: absolute;
+        margin-left: -140px;
+        top: -240px;
+        left:50%;
+    }
+    .splash .splash-subhead {
+        color: #FFF;
+        text-shadow: 0 1px 2px rgba(39, 39, 39, 0.6);
+        font-weight: 300;
+        font-size: 1.3em;
+        line-height: 1.8em;
+    }
+.content-wrapper {
+    position: absolute;
+    top: 87%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    color: #f1f1f1;
+}
+    .content {
+        margin:0;
+    }
+    .content .content-head {
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin: 2em 0 1em;
+    }
+    .content .pure-g p {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+    .clients-logo ul{
+        margin-top: 60px;
+        list-style: none;
+    }
+    .clients-logo ul>li{
+        display: inline-block;
+        vertical-align: middle;
+        margin: 1em;
+    }
+    .clients-logo img{
+        max-width: 140px;
+    }
