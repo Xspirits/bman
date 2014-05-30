@@ -13,9 +13,12 @@
             <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
         <![endif]-->
         <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+            <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
         <!--<![endif]-->
-        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel='stylesheet' type='text/css' href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel='stylesheet' type='text/css' href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css">
+        <link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' >
+        <link rel='stylesheet' type='text/css'href='http://fonts.googleapis.com/css?family=Lato:400,700'>
 
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
@@ -49,13 +52,38 @@
     </div>
     <div class="splash-container">
         <div class="splash">
-            <h1 class="splash-head">Get Security Now</h1>
-            <p class="splash-subhead">
+            <h1 class="splash-head animated fadeInUp">Get Security Now</h1>
+            <p class="splash-subhead  animated fadeInUp">
                 The Fastest &amp; Easiest Way to Book Security Professionals
             </p>
-            <p>
-                <a href="http://purecss.io" class="pure-button pure-button-primary">Get Started</a>
-            </p>
+            <form class="pure-form  pure-g  animated fadeInDown" id="bookGuard">
+                <fieldset class="l-box">
+
+                    <div class="pure-u-sm-1-2 pure-u-lg-1-4">
+                        <input type="number" placeholder="# of Guard(s)" name="guards_number" id="guards_number"  tabindex="1"  required>
+                    </div>
+                    <div class="pure-u-sm-1-2 pure-u-lg-1-4">
+                        <input type="datetime-local" name="date" tabindex="2" required>
+                    </div>
+                    <div class="pure-u-sm-1-2 pure-u-lg-1-4">
+                        <input type="text" placeholder="Address..." name="address" tabindex="3" required>
+                    </div>
+                    <div class="pure-u-sm-1-2 pure-u-lg-1-4">
+                        <select name="origin" tabindex="4">
+                            <option id="">For my...</option>
+                            <option id="office">Office</option>
+                            <option id="bar">Bar</option>
+                            <option id="restaurant">Restaurant</option>
+                            <option id="private-party">Private event</option>
+                            <option id="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="pure-u-1 is-center l-box">
+                        <button type="submit" tabindex="5" class="pure-button button-xlarge pink">Book Security Now</button>
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </div>
     <div class="content-wrapper blacky">
@@ -115,7 +143,7 @@
                     </h3>
                     <p>
                         <i class="fa fa-star fa-4x pull-left"></i>
-                        Your security & happiness is our top priority. We send you a feedback form after each booking.
+                        Your security &amp; happiness is our top priority. We send you a feedback form after each booking.
                     </p>
                 </div>
             </div>
@@ -135,67 +163,123 @@
             </div>
         </div>
 
-        <div class="ribbon l-box-lrg pure-g">
-            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-                <img class="pure-img-responsive" alt="File Icons" width="300" src="/img/common/file-icons.png">
-            </div>
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+        <div class="content is-center">
+            <h2 class="content-head is-center">What our Clients are Saying About Us</h2>
 
-                <h2 class="content-head content-head-ribbon">Laboris nisi ut aliquip.</h2>
+            <div class="pure-g">
+                    <figure class="l-box pure-u-sm-1-1 pure-u-md-1-2 is-center">
+                        <img src="/images/kim.png">
+                        <figcaption>
+                            "This is such a great service. Your guards are awesome!" <br> <br>
+                            - Kim
+                            @ Zendesk
+                        </figcaption>
+                    </figure>
+                    <figure class="l-box pure-u-sm-1-1 pure-u-md-1-2 is-center">
+                        <img src="/images/tonic_logo.png">
+                        <figcaption>
+                            "Bannerman has been a dream to work with." <br> <br>
 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor.
-                </p>
+                            - Tracey
+                            @ Tonic Nightlife Group
+                        </figcaption>
+                    </figure>
             </div>
         </div>
 
-        <div class="content">
-            <h2 class="content-head is-center">Dolore magna aliqua. Uis aute irure.</h2>
 
-            <div class="pure-g">
-                <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                    <form class="pure-form pure-form-stacked">
-                        <fieldset>
+        <div class="content" id="meetGuards">
+            <h2 class="content-head is-center">More Info About the Guards</h2>
 
-                            <label for="name">Your Name</label>
-                            <input id="name" type="text" placeholder="Your Name">
+            <div class="pure-g l-box">
+                <div class="pure-u-sm-1-1 pure-u-md-1-2 is-center">
+                    <figure class="is-center">
+                        <img src="/images/josh.png">
+                        <figcaption> Josh - 5 <i class="fa fa-star"></i></figcaption>
+                    </figure>
+                    <figure class="is-center">
+                        <img src="/images/nick.png">
+                        <figcaption> Nick - 4.9 <i class="fa fa-star"></i></figcaption>
+                    </figure>
+                </div>
+                <div class="pure-u-sm-1-1 pure-u-md-1-2">
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fa fa-check-square fa-4x pull-left"></i>
+                            <span>Bannermen Have Valid Guard Cards</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-square fa-4x pull-left"></i>
+                            Passed Thorough Backgrounds Checks
+                        </li>
+                        <li>
+                            <i class="fa fa-check-square fa-4x pull-left"></i>
+                            Professional &amp; Respectful Demeanor
+                        </li>
+                        <li>
+                            <i class="fa fa-check-square fa-4x pull-left"></i>
+                            Must-have Physical Presence for Visual Deterrence
+                        </li>   
+                        <li>
+                            <i class="fa fa-check-square fa-4x pull-left"></i>
+                            Strict Uniform - Black Polo, Black Pants, Black Belt, Black Shoes
+                        </li>                       
+                    </ul>
+                </div>
+            </div>
+        </div>
 
+        <div class="content" id="getStarted">
+            <h2 class="content-head is-center">Get Started Now</h2>
+        
+            <div class="pure-g l-box is-center">
+                <div class="pure-u-1">
+                    <form class="pure-form pure-g" id="bookGuardBottom">
+                        <fieldset class="l-box pure-u-sm-1-1">
 
-                            <label for="email">Your Email</label>
-                            <input id="email" type="email" placeholder="Your Email">
+                            <div class="pure-u-sm-1-2 pure-u-lg-1-3">
+                                <input type="number" placeholder="# of Guard(s)" name="guards_number" id="guards_number"  tabindex="1"  required>
+                            </div>
+                            <div class="pure-u-sm-1-2 pure-u-lg-1-3">
+                                <input type="datetime-local" name="date" tabindex="2" required>
+                            </div>
+                            <div class="pure-u-sm-1-2 pure-u-lg-1-3">
+                                <input type="text" placeholder="Address..." name="address" tabindex="3" required>
+                            </div>
+                            <div class="pure-u-sm-1-2 pure-u-lg-1-3">
+                                <select name="origin" tabindex="4">
+                                    <option id="">For my...</option>
+                                    <option id="office">Office</option>
+                                    <option id="bar">Bar</option>
+                                    <option id="restaurant">Restaurant</option>
+                                    <option id="private-party">Private event</option>
+                                    <option id="other">Other</option>
+                                </select>
+                            </div>
 
-                            <label for="password">Your Password</label>
-                            <input id="password" type="password" placeholder="Your Password">
-
-                            <button type="submit" class="pure-button">Sign Up</button>
+                            <div class="pure-u-1 is-center l-box">
+                                <button type="submit" tabindex="5" class="pure-button button-xlarge pink">Book Security Now</button>
+                            </div>
                         </fieldset>
                     </form>
                 </div>
-
-                <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-                    <h4>Contact Us</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
-                    </p>
-
-                    <h4>More Information</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                </div>
             </div>
 
         </div>
-
-        <div class="footer l-box is-center">
-            View the source of this layout to learn more. Made with love by the YUI Team.
+        <div class="footer l-box">
+          
+            <div class="is-center">
+                © Bannerman - <a href="">Terms</a> - <a href="">Privacy</a> - <a href="">Contact</a> - <a href="">Guard? Apply Here</a>
+            </div>
+            <div class="pull-right sn">
+                <iframe id="twitter-widget-0" class="pull-right"  scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/follow_button.1401325387.html#_=1401439600689&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=getbannerman&amp;show_count=true&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" title="Twitter Follow Button" data-twttr-rendered="true" style="width: 255px; height: 20px;"></iframe>
+                <div class="fb-like fb_iframe_widget pull-right" data-href="https://www.facebook.com/getbannerman" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" data-colorscheme="dark" style="margin-right: 5px;top:-5px;" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=267134316770663&amp;color_scheme=dark&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgetbannerman&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false">
+                    <span style="vertical-align: bottom; width: 81px; height: 20px;">
+                        <iframe name="f16ad45f3" width="1000px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=267134316770663&amp;channel=https%3A%2F%2Fs-static.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FV80PAcvrynR.js%3Fversion%3D41%23cb%3Df3d3844658%26domain%3Dgetbannerman.com%26origin%3Dhttps%253A%252F%252Fgetbannerman.com%252Ff22327a24%26relation%3Dparent.parent&amp;color_scheme=dark&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgetbannerman&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false" class="" style="border: none; visibility: visible; width: 81px; height: 20px;"></iframe>
+                    </span>
+                </div>
+                
+            </div>
         </div>
 
     </div>
